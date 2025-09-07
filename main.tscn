@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqjshlvapvq38"]
+
+[ext_resource type="PackedScene" uid="uid://dajors5bx3qvc" path="res://level_1.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://blf12xyg2fwt2" path="res://player.tscn" id="2_0xm2m"]
+
+[sub_resource type="Gradient" id="Gradient_0xm2m"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_h2yge"]
+gradient = SubResource("Gradient_0xm2m")
+fill_from = Vector2(0.0609756, 0)
+fill_to = Vector2(0, 1)
+
+[node name="Main" type="Node2D"]
+
+[node name="Level1" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(82, -4)
+
+[node name="Player" parent="." instance=ExtResource("2_0xm2m")]
+position = Vector2(270, 502)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = -8.0
+offset_top = -55.0
+offset_right = 1172.0
+offset_bottom = 9.0
+texture = SubResource("GradientTexture2D_h2yge")

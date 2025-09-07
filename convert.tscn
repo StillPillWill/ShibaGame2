@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu120yv052058"]
+
+[ext_resource type="Script" uid="uid://cg2w3kkfnxusa" path="res://Scripts/convert.gd" id="1_cy58s"]
+[ext_resource type="Texture2D" uid="uid://bdaqvrwadn0rs" path="res://images/ground.png" id="2_040b8"]
+
+[node name="Convert" type="Node2D"]
+script = ExtResource("1_cy58s")
+source_texture = ExtResource("2_040b8")
+rgb_tolerance = 1.732
+match_alpha = null
+alpha_tolerance = null
+polygon_color = Color(1, 1, 1, 1)
+simplify_polygon = null
+simplification_distance = null
+debug_mode = null
